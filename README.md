@@ -5,3 +5,6 @@
 "arn:aws:iam::011143606116:role/service-role/AmazonEMR-InstanceProfile-20240409T162541",
 "arn:aws:iam::011143606116:role/role-cmk-luiot-dev-ami-ebs", 
 "arn:aws:iam::011143606116:role/s3-dev1-role",
+
+"arn:aws:iam::011143606116:role/SnowAmazonSSMForInstancesRole",
+
