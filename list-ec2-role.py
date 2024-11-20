@@ -21,7 +21,7 @@ def get_role_arn_from_instance_profile(iam_client, instance_profile_arn):
         exit(1)
 
 def main():
-    session = boto3.Session()
+    session = boto3.Session(profile_name='sts', region_name='ap-northeast-2')
     ec2_client = session.client('ec2')
     iam_client = session.client('iam')
 
