@@ -1,7 +1,7 @@
 import boto3
 from botocore.exceptions import NoCredentialsError, PartialCredentialsError, ClientError
 
-session = boto3.Session()
+session = boto3.Session(profile_name='sts')
 ec2_client = session.client('ec2')
 iam_client = session.client('iam')
 
