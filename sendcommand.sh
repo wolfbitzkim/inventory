@@ -80,6 +80,6 @@ echo "s3api get-object"
 aws s3api get-object \
     --bucket "$bucket_name" \
     --key "$command_id/$instance_id/$script_path" \
-    send-cmd-output.txt  --profile sts #> /dev/null 2>&1
+    send-cmd-output.txt --profile sts #> /dev/null 2>&1
 
 python3 get-credential.py $profile $account_id
