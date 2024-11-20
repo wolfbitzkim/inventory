@@ -14,7 +14,8 @@ subprocess.run(["python3", "get-credential.py", profile, account_id])
 print(f"--- Role : {role_name} ---")
 profile_name = 'default'
 region_name = 'ap-northeast-2'
-session = boto3.Session(profile_name=profile_name, region_name=region_name)
+session = boto3.Session(profile_name='sts', region_name=region_name)
+
 iam_client = session.client('iam')
 policy_arn = f'arn:aws:iam::{account_id}:policy/SSIMSnowSSMSendCommandPolicy'
 
