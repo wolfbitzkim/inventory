@@ -8,7 +8,7 @@ if len(sys.argv) != 2:
 else:
     role_name = sys.argv[1]
 
-profile_name = 'default'
+profile_name = 'sts'
 region_name = 'ap-northeast-2'
 session = boto3.Session(profile_name=profile_name, region_name=region_name)
 
