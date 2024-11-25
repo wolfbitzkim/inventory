@@ -33,7 +33,7 @@ if [ "$platform" == "windows" ] || [ "$platform" == "window" ] || [ "$platform" 
   document_name="SG-AWS-RunPowerShellScript"
   script_path="awsrunPowerShellScript/runPowerShellScript/stdout"
 else
-  document_name="SG-AWS-RunShellScript"
+  document_name="SG-AWS-RunShellScript-V2"
   script_path="awsrunShellScript/runShellScript/stdout"
 fi
 
